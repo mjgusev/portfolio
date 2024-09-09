@@ -179,7 +179,7 @@ h2 {
   width: 200%;
   height: 200%;
   background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
-  transform: rotate(45deg);
+  transform: rotate(45deg) scale(1.2);
   transition: all var(--transition);
 }
 
@@ -389,14 +389,27 @@ footer a {
 .experience-icon {
   flex: 0 0 80px;
   margin-right: 20px;
+  position: relative;
 }
 
 .company-logo {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  padding: 5px;
-  background-color: transparent;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.company-logo-dark {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    padding: 5px;
+    background-color: transparent;
 }
 
 .experience-content {
@@ -539,10 +552,17 @@ body.dark-mode section:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-
 body.dark-mode .experience-content p,
 body.dark-mode .experience-content li {
   color: #d0d0d0;
+}
+
+body.dark-mode .company-logo {
+    display: none;
+}
+
+body.dark-mode .company-logo-dark {
+    display: block;
 }
 
 body.dark-mode .btn {
@@ -627,8 +647,7 @@ body.dark-mode .hobby-item:last-child {
 }
 
 body.dark-mode .skill-item {
-  background: var(--gradient);
-  border: 1px solid #555;
+  background: linear-gradient(135deg, #2840a0 0%, #7d3cc7 100%);
 }
 
 .content-wrapper {
