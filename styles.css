@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: none;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102,126,234,0.8) 0%, rgba(118,75,162,0.8) 100%);
+    z-index: -1;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+nav {
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 10px;
+    color: #667eea;
+    transition: color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    color: #764ba2;
+}
+
+body.dark-mode #dark-mode-toggle {
+    color: #f0f0f0;
+}
+
+body.dark.mode #dark-mode-toggle:hover {
+    color: #d0d0d0;
+}
+
+@media (max-width: 768px) {
+    nav .container {
+        flex-wrap: wrap;
+    }
+    
+    #dark-mode-toggle {
+        order: 2;
+        margin-right: 10px;
+    }
+    
+    .nav-toggle {
+        order: 3;
+    }
+    
+    nav ul {
+        order: 4;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #667eea;
+    background-color: #e9ecef;
+}
+
+section {
+    background-color: #fff;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.experience-item, .project-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.experience-item:last-child, .project-item:last-child {
+    border-bottom: none;
+}
+
+.experience-item h3, .project-item h3 {
+    color: #764ba2;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+    transform: rotate(45deg);
+    transition: all 0.3s;
+}
+
+.skill-item:hover::before {
+    left: 100%;
+    top: 100%;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+}
+
+.hobbies-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.hobby-item {
+    flex: 0 0 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.hobby-item:hover {
+    transform: translateY(-5px);
+}
+
+.hobby-item i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #667eea;
+}
+
+footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f0f2f5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #667eea;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background-color: #5a6fd6;
+    transform: translateY(-2px);
+}
+
+.particle-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(102,126,234,0.9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay h3 {
+    margin-bottom: 10px;
+}
+
+.project-overlay p {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f8f9fa;
+        padding: 1rem 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .hobbies-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hobby-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.experience-item {
+    display: flex;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-icon {
+    flex: 0 0 80px;
+    margin-right: 20px;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    background-color: #fff;
+}
+
+.experience-content {
+    flex: 1;
+}
+
+.experience-content h3, .experience-content h4 {
+    color: #667eea;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+.experience-content p {
+    margin-bottom: 10px;
+    color: #666;
+    font-style: italic;
+}
+
+.experience-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience-content li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.experience-content li::before {
+    content: '•';
+    color: #667eea;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#education {
+    position: relative;
+    overflow: hidden;
+}
+
+.education-icon {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.easter-egg {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #667eea;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.easter-egg:hover {
+    transform: scale(1.2);
+}
+
+.piano-keys {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.key {
+    width: 30px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid #000;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.key:active {
+    background-color: #ddd;
+}
+
+/* Add this at the end of the file */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.dark-mode header::before {
+    background: linear-gradient(135deg, rgba(102,126,234,0.8) 0%, rgba(118,75,162,0.8) 100%);
+}
+
+body.dark-mode nav {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode nav ul li a {
+    color: #f0f0f0;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #667eea;
+    background-color: #3a3a3a;
+}
+
+body.dark-mode section {
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .skill-item {
+    background: linear-gradient(135deg, #4a5d9e 0%, #5a3b7e 100%);
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: #667eea;
+}
+
+body.dark-mode .experience-content p,
+body.dark-mode .experience-content li {
+    color: #d0d0d0;
+}
+
+body.dark-mode .hobby-item {
+    background-color: #3a3a3a;
+}
+
+body.dark-mode .btn {
+    background-color: #667eea;
+    color: #f0f0f0;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #5a6fd6;
+}
+
+body.dark-mode .company-logo {
+    background-color: #f0f0f0;
+}
+
+body.dark-mode .nav-toggle {
+    color: #f0f0f0;
+}
+
+body.dark-mode .project-item {
+    background-color: #3a3a3a;
+}
+
+body.dark-mode .project-overlay {
+    background: rgba(102,126,234,0.9);
+}
+
+body.dark-mode footer {
+    background: linear-gradient(135deg, #4a5d9e 0%, #5a3b7e 100%);
+}
+
+body.dark-mode .experience-item,
+body.dark-mode .project-item {
+    border-bottom-color: #444;
+}
+
+body.dark-mode .experience-content li::before {
+    color: #667eea;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+body.dark-mode .experience-item,
+body.dark-mode .project-item,
+body.dark-mode .hobby-item {
+    background-color: transparent;
+    border: none;
+}
