@@ -5,178 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misha Gusev</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="particles-js" class="particle-background"></div>
     
-    <header>
-        <div class="container">
-            <h1>Misha Gusev</h1>
-            <p>Software Engineer</p>
-        </div>
-    </header>
-    
-    <nav>
-        <div class="container">
-            <div class="nav-toggle">☰</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-            </ul>
-            <button id="dark-mode-toggle" aria-label="Toggle dark mode">
-                <i class="fas fa-moon"></i>
-            </button>
-        </div>
-    </nav>
-    
-    <div class="container">
-        <!-- About section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="misha_gusev_portfolio.jpg" alt="Misha Gusev" class="profile-image">
-                <div>
-                    <p>I'm a passionate software engineer with a strong foundation in computer science and a minor in economics. I excel in developing innovative solutions and have a keen interest in fraud detection, automation, and web development. My diverse skill set and problem-solving abilities allow me to tackle complex challenges and deliver high-quality results.</p>
-                    <a href="/api/placeholder/400/320" class="btn" download>Download Resume</a>
-                </div>
+    <div class="content-wrapper">
+        <header>
+            <div class="container">
+                <h1>Misha Gusev</h1>
+                <p>Software Engineer</p>
             </div>
-        </section>
+        </header>
         
-        <!-- Experience section -->
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <div class="experience-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png" alt="Uber logo" class="company-logo">
-                </div>
-                <div class="experience-content">
-                    <h3>Uber</h3>
-                    <h4>Software Engineering Intern</h4>
-                    <p>June 2024 - August 2024 | Chicago, IL</p>
-                    <ul>
-                        <li>Developed fraud detection mechanisms for Uber Freight using Go, reducing fraud by 30%</li>
-                        <li>Revamped status architecture for freight carriers</li>
-                        <li>Engineered automated email communication systems, enhancing efficiency by 50%</li>
-                        <li>Conducted end-to-end testing with 100% coverage</li>
-                    </ul>
-                </div>
+        <nav>
+            <div class="container">
+                <div class="nav-toggle">☰</div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                </ul>
+                <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
-            <div class="experience-item">
-                <div class="experience-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Ohio_State_Buckeyes_logo.svg" alt="Ohio State logo" class="company-logo">
-                </div>
-                <div class="experience-content">
-                    <h3>The Ohio State University</h3>
-                    <h4>Undergraduate Teaching Assistant</h4>
-                    <p>January 2023 - December 2023 | Columbus, OH</p>
-                    <ul>
-                        <li>Assisted with labs for the Software Components course</li>
-                        <li>Developed teaching proficiency in object-oriented programming, Java, and data structures</li>
-                        <li>Hosted office hours and provided mentoring</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        </nav>
         
-        <!-- Projects section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <h3>osu.space</h3>
-                <p>JavaScript, Node.js, Vue.js, Git</p>
-                <div class="project-overlay">
+        <div class="container">
+            <!-- About section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="misha_gusev_portfolio.jpg" alt="Misha Gusev" class="profile-image">
+                    <div>
+                        <p>I'm a passionate software engineer with hands-on experience in backend development. I thrive in collaborative environments, enjoy problem-solving, and am always eager to learn new technologies. I’m currently pursuing my goal of becoming a well-rounded developer with a focus on building scalable and impactful solutions. Thanks for checking out my portfolio!</p>
+                        <a href="Misha_Gusev_Resume.pdf" class="btn" download>Download Resume</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Experience section -->
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <div class="experience-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png" alt="Uber logo" class="company-logo">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Uber</h3>
+                        <h4>Software Engineering Intern</h4>
+                        <p>June 2024 - August 2024 | Chicago, IL</p>
+                        <ul>
+                            <li>Developed fraud detection mechanisms for Uber Freight using Go, reducing fraud by 30%</li>
+                            <li>Revamped status architecture for freight carriers</li>
+                            <li>Engineered automated email communication systems, enhancing efficiency by 50%</li>
+                            <li>Conducted end-to-end testing with 100% coverage</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Ohio_State_Buckeyes_logo.svg" alt="Ohio State logo" class="company-logo">
+                    </div>
+                    <div class="experience-content">
+                        <h3>The Ohio State University</h3>
+                        <h4>Undergraduate Teaching Assistant</h4>
+                        <p>January 2023 - December 2023 | Columbus, OH</p>
+                        <ul>
+                            <li>Assisted with labs for the Software Components course</li>
+                            <li>Developed teaching proficiency in object-oriented programming, Java, and data structures</li>
+                            <li>Hosted office hours and provided mentoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Projects section -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3>Coming soon...</h3>
+                    <p>TBD</p>
+                    <div class="project-overlay">
+                        <h3>Coming soon...</h3>
+                        <p>Let me cook</p>
+                    </div>
+                </div>
+                <div class="project-item">
                     <h3>osu.space</h3>
-                    <p>A responsive and intuitive UI built with Vue.js, backed by a robust Node.js server. Increased user satisfaction by 20% through continuous improvement.</p>
+                    <p>JavaScript, Node.js, Vue.js, Git</p>
+                    <div class="project-overlay">
+                        <h3>osu.space</h3>
+                        <p>A responsive widget dashboard for OSU students built with Vue.js, backed by a robust Node.js server</p>
+                    </div>
                 </div>
-            </div>
-            <div class="project-item">
-                <h3>Glossary Generator</h3>
-                <p>Java, HTML/CSS</p>
-                <div class="project-overlay">
+                <div class="project-item">
                     <h3>Glossary Generator</h3>
-                    <p>A Java-based application for generating web-based glossaries with robust error-handling for an improved user experience.</p>
+                    <p>Java, HTML/CSS</p>
+                    <div class="project-overlay">
+                        <h3>Glossary Generator</h3>
+                        <p>A Java-based application for generating web-based glossaries with robust error-handling and modern styling</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        
-        <!-- Skills section -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <span class="skill-item">Python</span>
-                <span class="skill-item">Java</span>
-                <span class="skill-item">Go</span>
-                <span class="skill-item">C</span>
-                <span class="skill-item">JavaScript</span>
-                <span class="skill-item">SQL</span>
-                <span class="skill-item">Ruby</span>
-                <span class="skill-item">HTML/CSS</span>
-                <span class="skill-item">Flask</span>
-                <span class="skill-item">Django</span>
-                <span class="skill-item">Vue.js</span>
-                <span class="skill-item">Node.js</span>
-                <span class="skill-item">Express.js</span>
-                <span class="skill-item">Hugo</span>
-                <span class="skill-item">Rails</span>
-                <span class="skill-item">JUnit</span>
-                <span class="skill-item">Git</span>
-                <span class="skill-item">Linux</span>
-            </div>
-        </section>
-        
-        <!-- Education section -->
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-icon">
-                <i class="fas fa-graduation-cap"></i>
-            </div>
-            <h3>The Ohio State University</h3>
-            <p>B.S. in Computer Science and Engineering, Economics Minor</p>
-            <p>GPA: 3.454 | August 2022 - December 2025</p>
-            <div class="easter-egg" onclick="playOhioStateAnthem()">🏈</div>
-        </section>
-        
-        <!-- Hobbies section -->
-        <section id="hobbies">
-            <h2>Hobbies</h2>
-            <div class="hobbies-list">
-                <div class="hobby-item">
-                    <i class="fa-solid fa-music"></i>
-                    <h3>Playing Piano</h3>
-                    <p>Practicing classical piano and creating melodies that fit into Pokemon Diamond and Pearl</p>
+            </section>
+            
+            <!-- Skills section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">Java</span>
+                    <span class="skill-item">Go</span>
+                    <span class="skill-item">C</span>
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">SQL</span>
+                    <span class="skill-item">Ruby</span>
+                    <span class="skill-item">HTML/CSS</span>
+                    <span class="skill-item">Flask</span>
+                    <span class="skill-item">Django</span>
+                    <span class="skill-item">Vue.js</span>
+                    <span class="skill-item">Node.js</span>
+                    <span class="skill-item">Express.js</span>
+                    <span class="skill-item">Hugo</span>
+                    <span class="skill-item">Rails</span>
+                    <span class="skill-item">JUnit</span>
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">Linux</span>
                 </div>
-                <div class="hobby-item" id="rpg-hobby">
-                    <i class="fas fa-gamepad"></i>
-                    <h3>Video Games</h3>
-                    <p>Talk to me about Persona 5, Undertale, Hollow Knight, Elden Ring, and more...</p>
+            </section>
+            
+            <!-- Education section -->
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-content">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-text">
+                        <h3>The Ohio State University</h3>
+                        <p>B.S. in Computer Science and Engineering, Economics Minor</p>
+                    </div>
                 </div>
-                <div class="hobby-item">
-                    <i class="fas fa-basketball-ball"></i>
-                    <h3>Sports & Fitness</h3>
-                    <p>Staying active through basketball (Jalen Brunson fan), volleyball, and rock climbing</p>
+                <div class="easter-egg" onclick="playOhioStateAnthem()">🏈</div>
+            </section>
+            
+            <!-- Hobbies section -->
+            <section id="hobbies">
+                <h2>Hobbies</h2>
+                <div class="hobbies-list">
+                    <div class="hobby-item">
+                        <i class="fa-solid fa-music"></i>
+                        <h3>Piano</h3>
+                        <p>Practicing classical piano and making Pokemon inspired music in FL Studio</p>
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Video Games</h3>
+                        <p>Talk to me about Persona 5, Undertale, Hollow Knight, Elden Ring, and more...</p>
+                    </div>
+                    <div class="hobby-item">
+                        <i class="fas fa-basketball-ball"></i>
+                        <h3>Sports</h3>
+                        <p>Staying active through basketball (Jalen Brunson fan), volleyball, rock climbing</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </div>
-    
-    <footer>
-        <div class="container">
-            <p>© 2024 Misha Gusev. All rights reserved.</p>
-            <p>Contact: <a href="mailto:michaeljgusev@gmail.com">michaeljgusev@gmail.com</a> | 847-790-6529</p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/misha-gusev" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/mjgusev" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+            </section>
         </div>
-    </footer>
-    
-    <script src="script.js"></script>
+        
+        <footer>
+            <div class="container">
+                <p>&copy; <span id="copyright-year"></span> Misha Gusev. All rights reserved.</p>
+                <p>Contact: <a href="mailto:michaeljgusev@gmail.com">michaeljgusev@gmail.com</a> | 847-790-6529</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/misha-gusev" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/mjgusev" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
