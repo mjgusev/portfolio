@@ -111,7 +111,7 @@ export default function ThemeMenu(): ReactElement {
               className="theme-swatch h-6 w-6 rounded-full border border-white/20 flex items-center justify-center"
             >
               {/* Random (asterisk) icon */}
-              <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 stroke-white [data-theme=light]:stroke-white" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 stroke-white [data-theme=light]:stroke-black" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                 <path d="M12 3v18M3 12h18M5 5l14 14M19 5L5 19"/>
               </svg>
             </button>
